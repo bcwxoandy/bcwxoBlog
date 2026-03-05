@@ -1,3 +1,4 @@
 # 博客
 
-按时间查看全部文章。
+- [Hello Zensical](posts/hello-zensical.md)
+- [第二篇文章](posts/second-post.md)
