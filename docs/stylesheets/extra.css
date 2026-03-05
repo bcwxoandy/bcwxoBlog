@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("https://cdn.jsdelivr.net/gh/bcwxoandy/bcwxo_config@main/fonts/Space_Mono/SpaceMono-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("https://cdn.jsdelivr.net/gh/bcwxoandy/bcwxo_config@main/fonts/Space_Mono/SpaceMono-Italic.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("https://cdn.jsdelivr.net/gh/bcwxoandy/bcwxo_config@main/fonts/Noto_Sans_SC/static/NotoSansSC-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bear-width: 760px;
+  --bear-bg: #000084;
+  --bear-panel: #00006a;
+  --bear-text: #b7b7b7;
+  --bear-title-bg: #00aaaa;
+  --bear-title-fg: #000000;
+  --bear-border: #b7b7b7;
+  --md-default-bg-color: var(--bear-bg);
+  --md-default-fg-color: var(--bear-text);
+  --md-typeset-a-color: var(--bear-text);
+}
+
+body {
+  background: var(--bear-bg);
+  color: var(--bear-text);
+  font-family: "Space Mono", "Noto Sans SC", monospace;
+}
+
+.md-header,
+.md-tabs,
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  background: #000000;
+}
+
+.md-main__inner {
+  max-width: var(--bear-width);
+  margin: 1.2rem auto;
+}
+
+.md-content__inner {
+  border: 1px solid var(--bear-border);
+  background: transparent;
+  padding: 1.2rem 1.4rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Space Mono", "Noto Sans SC", monospace;
+  color: var(--bear-title-fg);
+  background: var(--bear-title-bg);
+  font-weight: 500;
+  padding: 0.35em 0.55em;
+}
+
+.md-typeset h1 {
+  font-size: 1.2em;
+}
+
+.md-typeset h2 {
+  font-size: 1.1em;
+}
+
+.md-typeset h3 {
+  font-size: 1em;
+}
+
+.md-typeset a {
+  color: var(--bear-text);
+  text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  color: #000000;
+  background: var(--bear-text);
+}
+
+.md-typeset code {
+  background: var(--bear-text);
+  color: #222;
+  border-radius: 0;
+}
+
+.md-typeset pre > code {
+  background: #b7b7b7;
+}
+
+.md-typeset blockquote {
+  border-left: 1px solid #999;
+  color: var(--bear-text);
+  font-style: italic;
+}
+
+.md-typeset .md-tag {
+  background: var(--bear-panel);
+  border: 1px dashed var(--bear-border);
+  color: var(--bear-text);
+}
+
+.md-footer {
+  background: var(--bear-title-bg);
+  color: var(--bear-title-fg);
+}
+
+.md-top {
+  background: #000000;
+}
+
+@media (max-width: 900px) {
+  .md-main__inner {
+    margin: 0.5rem auto;
+  }
+
+  .md-content__inner {
+    padding: 1rem 0.95rem;
+  }
+}
